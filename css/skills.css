@@ -1,0 +1,280 @@
+:root {
+    --html: rgb(249 103 50);
+    --css: rgb(76, 149, 218);
+    --mongo: linear-gradient(120deg, #edeaea, #5eda5e, #ffffff);
+    --mongoose: rgb(134, 187, 134);
+    --tail: rgb(96, 204, 210);
+    --boot: rgb(185, 122, 248);
+    --js: rgb(223, 223, 23);
+    --git: linear-gradient(120deg, yellow, skyblue);
+    --node: rgb(57, 194, 57);
+    --sql: linear-gradient(120deg, #f89c0e, #6c78af);
+    --exp: rgb(15, 176, 240);
+    --dep: navajowhite;
+    --react: rgb(15, 176, 240);
+    --php: rgb(68, 57, 192);
+    --lar: #f55247;
+}
+.container_skills {
+    width: 75%;
+}
+.container_skills p {
+    font-size: 1.2rem;
+}
+.tech {
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin-bottom: 0.3rem;
+}
+.dot {
+    position: absolute;
+    top: -0.09rem;
+    border-radius: 50%;
+}
+.line {
+    background-color: #efefef;
+    width: 100%;
+    height: 7px;
+    border-radius: 2rem;
+    position: relative;
+}
+
+/* * LINES EDITING   */
+.helper {
+    height: 7px;
+    position: absolute;
+    top: 0;
+    border-radius: 2rem;
+    animation: 0.8s ease 0s;
+}
+@keyframes incr {
+    0% {
+        width: 0%;
+    }
+}
+.helper::before {
+    position: absolute;
+    top: -2rem;
+    font-size: 1.3rem;
+}
+
+/* . HTML */
+.html {
+    width: 95%;
+    background-color: var(--html);
+}
+.html::before {
+    right: -4%;
+    content: "95%";
+    color: var(--html);
+}
+.html .dot {
+    border: 0.5rem solid var(--html);
+    right: 0%;
+}
+
+/* . CSS */
+.css {
+    width: 80%;
+    background-color: var(--css);
+}
+.css::before {
+    right: -4%;
+    content: "80%";
+    color: var(--css);
+}
+.css .dot {
+    border: 0.5rem solid var(--css);
+    right: 0%;
+}
+
+/* . JAVASCRIPT */
+
+.js {
+    width: 70%;
+    background-color: var(--js);
+}
+.js::before {
+    right: -4%;
+    content: "70%";
+    color: var(--js);
+}
+.js .dot {
+    border: 0.5rem solid var(--js);
+    right: 0%;
+}
+/* . TAILWIND */
+.tail {
+    width: 70%;
+    background-color: var(--tail);
+}
+.tail::before {
+    right: -4%;
+    content: "70%";
+    color: var(--tail);
+}
+.tail .dot {
+    border: 0.5rem solid var(--tail);
+    right: 0%;
+}
+
+/* . BOOTSTRAP */
+.boot {
+    width: 85%;
+    background-color: var(--boot);
+}
+.boot::before {
+    right: -4%;
+    content: "85%";
+    color: var(--boot);
+}
+.boot .dot {
+    border: 0.5rem solid var(--boot);
+    right: 0%;
+}
+
+/* . REACT */
+.react {
+    width: 55%;
+    background-color: var(--react);
+}
+.react::before {
+    right: -4%;
+    content: "55%";
+    color: var(--react);
+}
+.react .dot {
+    border: 0.5rem solid var(--react);
+    right: 0%;
+}
+
+/* . PHP */
+.php {
+    width: 85%;
+    background: var(--php);
+}
+.php::before {
+    right: -4%;
+    content: "85%";
+    color: var(--php);
+}
+.php .dot {
+    border: 0.5rem solid var(--php);
+    right: 0%;
+}
+
+/* . LARAVEL */
+.laravel {
+    width: 65%;
+    background: var(--lar);
+}
+.laravel::before {
+    right: -4%;
+    content: "65%";
+    color: var(--lar);
+}
+.laravel .dot {
+    border: 0.5rem solid var(--lar);
+    right: 0%;
+}
+
+/* . EXPRESS */
+.exp {
+    width: 55%;
+    background: var(--exp);
+}
+.exp::before {
+    right: -4%;
+    content: "55%";
+    color: var(--exp);
+}
+.exp .dot {
+    border: 0.5rem solid var(--exp);
+    right: 0%;
+}
+/* . NODE */
+.node {
+    width: 65%;
+    background: var(--node);
+}
+.node::before {
+    right: -4%;
+    content: "65%";
+    color: var(--node);
+}
+.node .dot {
+    border: 0.5rem solid var(--node);
+    right: 0%;
+}
+/* . MY SQL */
+.sql {
+    width: 90%;
+    background: var(--sql);
+}
+.sql::before {
+    right: -4%;
+    content: "90%";
+    color: #f89c0e;
+}
+.sql .dot {
+    border: 0.5rem solid #f89c0e;
+    right: 0%;
+}
+/* . NODE */
+.mongo {
+    width: 70%;
+    background: var(--mongo);
+}
+.mongo::before {
+    right: -4%;
+    content: "70%";
+    color: #5eda5e;
+}
+.mongo .dot {
+    border: 0.5rem solid #5eda5e;
+    right: 0%;
+}
+/* . NODE */
+.mongoose {
+    width: 40%;
+    background: var(--mongoose);
+}
+.mongoose::before {
+    right: -4%;
+    content: "50%";
+    color: var(--mongoose);
+}
+.mongoose .dot {
+    border: 0.5rem solid var(--mongoose);
+    right: 0%;
+}
+/* . GIT */
+.git {
+    width: 60%;
+    background: var(--git);
+}
+.git::before {
+    right: -4%;
+    content: "60%";
+    color: skyblue;
+}
+.git .dot {
+    border: 0.5rem solid skyblue;
+    right: 0%;
+}
+
+/* . GIT */
+.dep {
+    width: 40%;
+    background: var(--dep);
+}
+.dep::before {
+    right: -4%;
+    content: "50%";
+    color: var(--dep);
+}
+.dep .dot {
+    border: 0.5rem solid var(--dep);
+    right: 0%;
+}
