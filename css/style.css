@@ -8,6 +8,12 @@ nav ul li a {
     letter-spacing: 0.125rem;
     cursor: pointer;
 }
+.container_home h1{
+    font-size: 6rem;
+}
+.container_home h2{
+    font-size: 4.5rem;
+}
 * {
     color: #fff;
 }
@@ -77,6 +83,10 @@ main {
     height: 100vh;
     /* background-color: #f7f6f6; */
 }
+.container_contact,
+.container_skills {
+    width: 85%;
+}
 .my-img {
     position: relative;
 }
@@ -120,8 +130,13 @@ main {
     padding-left: 3rem;
     margin: 3rem 0;
     font-size: 1.1rem;
-    width: 80%;
+    width: 85%;
     line-height: 2rem;
+}
+.container_about p {
+    word-spacing: 0.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
 }
 .sub_title {
     color: #bab7b7;
@@ -132,7 +147,7 @@ main {
     letter-spacing: 0.2rem;
 }
 .box {
-    margin-top: 5rem;
+    margin-top: 2rem;
     text-align: center;
     padding: 3rem 2rem;
     box-shadow: 0 0 30px 0px rgba(19, 19, 19, 0.13);
@@ -380,13 +395,13 @@ body {
     background-color: #111827;
 }
 
-.test_grid{
+.test_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 520px));
     grid-template-columns: repeat(auto-fit, minmax());
     gap: 2rem;
 }
-.social_handles .uil:hover{
+.social_handles .uil:hover {
     color: var(--main-color);
-    transition: all .4s ease-in;
+    transition: all 0.4s ease-in;
 }

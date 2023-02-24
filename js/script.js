@@ -8,12 +8,11 @@ let Projects = [
         gitHub: "https://github.com/SAAD2129/Cloud-Notes",
     },
     {
-        name: "Instagram Clone",
-        category: "mern",
-        url: "https://github.com/SAAD2129/Instagram-Clone",
-        // img: "https://source.unsplash.com/random/470x342?notes,todo",
-        img: "./images/insta.jpeg",
-        gitHub: "https://github.com/SAAD2129/Instagram-Clone",
+        name: "Pizzata",
+        category: "php",
+        url: "https://github.com/SAAD2129/Pizzata",
+        img: "./images/pizzata.png",
+        gitHub: "https://github.com/SAAD2129/Pizzata",
     },
     {
         name: "Instagram Clone",
@@ -146,8 +145,8 @@ const loadData = () => {
         html += `<div class="card" >
                     <div class="card-body relative" id="${i}">
                         <div class="card-title">
+                            <a href="${element.gitHub}" class="flex item-center gap-1"  target="_blank">
                             <span class="text-white">${element.name}</span>
-                            <a href="${element.gitHub}"   target="_blank">
                             <i class="uil uil-github text-white med-font"></i></a>                        
                         </div>
                         <p class="card-text">${element.category}</p>
@@ -431,5 +430,5 @@ menuBtn.addEventListener("click", () => {
 });
 
 const scrollToContact = () => {
-    document.documentElement.scrollTop = "5700";
+    document.documentElement.scrollTop = "6200";
 };
