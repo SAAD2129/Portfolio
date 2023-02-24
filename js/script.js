@@ -114,16 +114,16 @@ navLinks.forEach((btn) => {
             document.documentElement.scrollTop = "880";
         } else if (txt.toLowerCase() == "services") {
             removeClasses();
-            document.documentElement.scrollTop = "1580";
+            document.documentElement.scrollTop = "1500";
         } else if (txt.toLowerCase() == "skills") {
             removeClasses();
-            document.documentElement.scrollTop = "2770";
+            document.documentElement.scrollTop = "3100";
         } else if (txt.toLowerCase() == "projects") {
             removeClasses();
-            document.documentElement.scrollTop = "3750";
+            document.documentElement.scrollTop = "4250";
         } else if (txt.toLowerCase() == "contact") {
             removeClasses();
-            document.documentElement.scrollTop = "4700";
+            document.documentElement.scrollTop = "15000";
         }
         // e.target.classList.add("active");
     });
@@ -390,12 +390,32 @@ window.onscroll = () => {
         removeClasses();
         document.querySelector(".projects").classList.add("active");
     }
-    if (winScroll >= "4700") {
+    if (winScroll >= "5500") {
         removeClasses();
         document.querySelector(".contact").classList.add("active");
     }
-
-
 };
 loadData();
 
+// Menu
+let menuBtn = document.querySelector(".menu_btn");
+
+let navBar = document.querySelector(".nav_bar");
+
+menuBtn.addEventListener("click", () => {
+    if (navBar.style.left === "0%") {
+        menuBtn.style.left = "1rem";
+        navBar.style.left = "-100%";
+        menuBtn.classList.remove("uil-times");
+        menuBtn.classList.add("uil-bars");
+    } else {
+        navBar.style.left = "0%";
+        menuBtn.style.left = "23%";
+        menuBtn.classList.add("uil-times");
+        menuBtn.classList.remove("uil-bars");
+    }
+});
+
+const scrollToContact = () => {
+    document.documentElement.scrollTop = "4700";
+};

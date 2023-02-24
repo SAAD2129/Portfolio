@@ -38,6 +38,7 @@
         <title>Mr Saad | Portfolio</title>
     </head>
     <body>
+        <i class="uil menu_btn med-font main- uil-bars"></i>
         <nav class="nav_bar">
             <div class="logo">
                 <img src="images/SAAD.jpeg" alt="Saad" />
@@ -97,10 +98,10 @@
                     <h1 class="large-font my-1">A Full Stack</h1>
                     <h2 class="small-font">Developer</h2>
                     <div class="flex gap-1 mt-2">
-                        <a href="/" class="btn px-2 py-1 curve"
+                        <a target="_blank" href="assets/Saad_full_stack.pdf" class="btn px-2 py-1 curve"
                             >Download Resume</a
                         >
-                        <a href="/" class="btn px-2 py-1 curve">HIRE ME</a>
+                        <button class="btn contact px-2 py-1 curve" onclick="scrollToContact()">HIRE ME</button>
                     </div>
                 </div>
                 <div class="my-img">
@@ -108,7 +109,7 @@
                 </div>
             </div>
 
-            <div id="about" class="container_about width-75p my-5">
+            <div id="about" class="container_about width-75p my-5  p-3">
                 <p class="sub_title">ABOUT ME</p>
                 <h2 class="title med-font mb-5">WHO AM I ?</h2>
                 <p>
@@ -117,7 +118,7 @@
                     <br />
                     in QUEST nawabshah in 2nd Year.
                 </p>
-                <div class="grid gtc-4 gap-2">
+                <div class="grid row_about gap-2">
                     <div class="box front text-red-500">
                         <span>Frontend</span>
                     </div>
@@ -147,7 +148,7 @@
             <div id="services" class="container_services px-4 my-5">
                 <p class="sub_title">I OFFER</p>
                 <h2 class="title med-font mb-5">WHAT I CAN DO ?</h2>
-                <div class="grid gtc-3 gap-2">
+                <div class="grid row gap-2">
                     <div class="box">
                         <h2 class="mb-1">Portfolios</h2>
                         <p>portfolios don't have any data changes</p>
@@ -179,7 +180,7 @@
                         <p>information on-line</p>
                     </div>
                     <div class="box">
-                        <h2 class="mb-1">School Websites</h2>
+                        <h2 class="mb-1">Blog Websites</h2>
                         <p>Blogs are a space for people to share </p>
                         <p>written and visual content about</p>
                         <p> whatever they desire.</p>
@@ -214,7 +215,7 @@
                 <p class="sub_title">MY SKILLS</p>
                 <h2 class="title med-font mb-5">TECHNICAL LEVEL</h2>
                 <p>I have experience in the following technologies.</p>
-                <h2 class="mt-3 weight-500">Frontend Technologies</h2>
+                <h2 class="mt-3 exsmall-font weight-500">Frontend Technologies</h2>
                 <div class="grid gtc-2 gap-3 mt-2">
                     <div>
                         <h3 class="tech">Html</h3>
@@ -265,7 +266,7 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="mt-5 weight-500">Backend Technologies</h2>
+                <h2 class="mt-5 exsmall-font weight-500">Backend Technologies</h2>
                 <div class="grid gtc-2 gap-3 mt-2">
                     <div>
                         <h3 class="tech">Php</h3>
@@ -324,7 +325,7 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="mt-5">Extras</h2>
+                <h2 class="mt-5 exsmall-font weight-500">Extras</h2>
                 <div class="grid gtc-2 gap-3 mt-2">
                     <div>
                         <h3 class="tech">Git</h3>
@@ -347,7 +348,7 @@
             <!-- *****==> SKILLS  SECTION ENDS HERE<==*****-->
 
             <!-- *****==> PROJECTS  SECTION STARTS HERE<==*****-->
-            <div id="projects" class="container_projects width-75p my-6 pl-3">
+            <div id="projects" class="container_projects width-75p my-6 p-3">
                 <p class="sub_title">MY WORK</p>
                 <h2 class="title med-font mb-5">RECENT PROJECTS</h2>
                 <ul class="flex gap-2">
@@ -393,7 +394,7 @@
                         </button>
                     </li>
                 </ul>
-                <div class="grid gtc-3 mt-5 gap-3 project_grid"></div>
+                <div class="grid row mt-5 gap-2 project_grid"></div>
             </div>
             <!-- *****==> PROJECTS  SECTION ENDS HERE<==*****-->
 
@@ -401,7 +402,7 @@
             <div id="contact" class="container_contact my-5">
                 <p class="sub_title">KEEP IN TOUCH</p>
                 <h2 class="title med-font mb-5">CONTACT ME</h2>
-                <div class="flex width-100p space-between">
+                <div class="flex contact_form width-100p space-between">
                     <form
                         action="https://formspree.io/f/xgeddkyv"
                         method="post"

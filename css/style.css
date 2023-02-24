@@ -10,6 +10,9 @@ nav ul li a {
 .sea {
     color: lightseagreen;
 }
+.nav_bar {
+    transition: all 0.7s ease;
+}
 nav ul li a::before {
     content: "";
     width: 0%;
@@ -40,7 +43,8 @@ nav ul li {
     height: 100vh;
     position: fixed;
     padding: 3rem;
-    background-color: #ebf3f6ce;
+    background-color: #efefef;
+    z-index: 100;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -55,6 +59,12 @@ nav ul li {
 }
 .active {
     color: lightseagreen;
+}
+.row {
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+}
+.row_about {
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
 }
 main {
     padding-left: 20%;
@@ -231,8 +241,8 @@ p {
 .container_contact form {
     width: 60%;
 }
-.btn{
-    background-color: var(--main-color)!important;
+.btn {
+    background-color: var(--main-color) !important;
 }
 .box_sm {
     width: 8.3rem;
@@ -288,10 +298,70 @@ p {
     align-items: center;
     height: max-content;
 }
-.uil-github:hover{
-    transition: all .3s ease-in;
+.uil-github:hover {
+    transition: all 0.3s ease-in;
     transform: scale(1.05);
     /* font-size: 3rem; */
     color: gray;
 }
 
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 75%;
+    }
+    .nav_bar {
+        padding: 1rem;
+    }
+}
+.menu_btn {
+    position: fixed;
+    top: 0.5rem;
+    left: 1rem;
+    z-index: 50;
+    border-radius: 0.5rem;
+    transition: all 0.7s ease;
+    cursor: pointer;
+    opacity: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .contact_form{
+        gap: 7rem;
+        flex-direction: column-reverse;
+    }
+    .contact_form form{ 
+        width: 100%;
+    }
+    .container_skills .grid{
+        display: block;
+    }
+    .container_skills h3{
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 1100px) {
+    html {
+        font-size: 65%;
+    }
+    .nav_bar {
+        transition: all 0.3s ease-in;
+        width: 22%;
+        padding: 1rem;
+        left: -100%;
+    }
+    .menu_btn {
+        opacity: 1;
+    }
+    main {
+        padding-left: 0%;
+    }
+
+    .container_about,
+    .container_contact,
+    .container_skills {
+        width: 100% !important;
+    }
+    .container_projects {
+        width: 100% !important;
+    }
+}
