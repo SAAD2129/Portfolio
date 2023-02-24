@@ -16,6 +16,13 @@ let Projects = [
         gitHub: "https://github.com/SAAD2129/Instagram-Clone",
     },
     {
+        name: "Instagram Clone",
+        category: "mern",
+        url: "https://github.com/SAAD2129/Instagram-Clone",
+        img: "./images/insta.jpeg",
+        gitHub: "https://github.com/SAAD2129/Instagram-Clone",
+    },
+    {
         name: "E-commerce ",
         category: "mern",
         url: "./assets/Shopify.mp4",
@@ -121,6 +128,9 @@ navLinks.forEach((btn) => {
         } else if (txt.toLowerCase() == "projects") {
             removeClasses();
             document.documentElement.scrollTop = "4250";
+        } else if (txt.toLowerCase() == "testimonials") {
+            removeClasses();
+            document.documentElement.scrollTop = "5350";
         } else if (txt.toLowerCase() == "contact") {
             removeClasses();
             document.documentElement.scrollTop = "15000";
@@ -386,11 +396,15 @@ window.onscroll = () => {
         removeClasses();
         document.querySelector(".skills").classList.add("active");
     }
-    if (winScroll >= "3400" && winScroll < "5200") {
+    if (winScroll >= "3400" && winScroll < "5300") {
         removeClasses();
         document.querySelector(".projects").classList.add("active");
     }
-    if (winScroll >= "5500") {
+    if (winScroll >= "5300") {
+        removeClasses();
+        document.querySelector(".test").classList.add("active");
+    }
+    if (winScroll >= "6000") {
         removeClasses();
         document.querySelector(".contact").classList.add("active");
     }
@@ -410,12 +424,12 @@ menuBtn.addEventListener("click", () => {
         menuBtn.classList.add("uil-bars");
     } else {
         navBar.style.left = "0%";
-        menuBtn.style.left = "23%";
+        menuBtn.style.left = "1rem";
         menuBtn.classList.add("uil-times");
         menuBtn.classList.remove("uil-bars");
     }
 });
 
 const scrollToContact = () => {
-    document.documentElement.scrollTop = "4700";
+    document.documentElement.scrollTop = "5700";
 };

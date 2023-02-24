@@ -8,7 +8,7 @@
 	list-style: none;
 	text-decoration: none !important;
 	font-family: "Poppins", sans-serif !important;
-	color: black;
+	/* color: black; */
 	scroll-behavior: smooth;
 }
 
@@ -17,14 +17,12 @@ html {
 }
 
 :root {
-	--main-color: #f32121;
-	/* --main-color: #4bc0c8; */
-	/* --main-color: #e0ae7f; */
+	--main-color: #036bd4;
 	--helper-color: #4bc0c8;
 	--text-color: #8e8e8e;
 	--border-color: #dbdbdb;
 	--bg-color: #caf0f824;
-	--hover-color: #ed5757;
+	--hover-color: #0080ff;
 	--white-color: #fff;
 	--font2-color: #585b5b;
 	--trans-03: transition: all 0.3s ease-in;

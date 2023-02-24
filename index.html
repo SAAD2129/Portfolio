@@ -34,6 +34,12 @@
             sizes="16x16"
             href="favicon/favicon-16x16.png"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <link rel="manifest" href="/site.webmanifest" />
         <title>Mr Saad | Portfolio</title>
     </head>
@@ -44,9 +50,11 @@
                 <img src="images/SAAD.jpeg" alt="Saad" />
             </div>
             <div class="my-2 center">
-                <h2 class="weight-800 small-font letter-spacing">Saad</h2>
-                <p class="center exsmall-font">
-                    <span class="sea">FULL STACK DEVELOPER</span>
+                <h2 class="weight-800 text-white small-font letter-spacing">
+                    Saad
+                </h2>
+                <p class="center text-white exsmall-font">
+                    <span class="text-white sea">FULL STACK DEVELOPER</span>
                 </p>
             </div>
             <ul class="">
@@ -55,13 +63,14 @@
                 <li><a class="nav_link services">SERVICES</a></li>
                 <li><a class="nav_link skills">SKILLS</a></li>
                 <li><a class="nav_link projects">PROJECTS</a></li>
+                <li><a class="nav_link test">TESTIMONIALS</a></li>
                 <li><a class="nav_link contact">CONTACT</a></li>
             </ul>
             <div class="mt-4 center">
                 <span class="mt-3 center">
                     CopyRight&copy; 2023 Mr Saad all rights Reserved
                 </span>
-                <div class="flex gap-1 content-center">
+                <div class="flex gap-1 social_handles content-center">
                     <div>
                         <a
                             href="https://www.linkedin.com/in/mr-sajid-53b646240"
@@ -88,28 +97,40 @@
                             ><i class="uil small-font uil-instagram"></i
                         ></a>
                     </div>
+                    <div>
+                        <a
+                            href="https://wa.me/message/XGEC62XSNHXMO1"
+                            target="_blank"
+                            ><i class="uil small-font uil-whatsapp"></i
+                        ></a>
+                    </div>
                 </div>
             </div>
         </nav>
         <main class="">
-            <div class="container_home flex item-center space-between">
-                <div class="pl-5 text-center">
-                    <h2 class="small-font my-1">I am</h2>
-                    <h1 class="large-font my-1">A Full Stack</h1>
-                    <h2 class="small-font">Developer</h2>
-                    <div class="flex gap-1 mt-2">
-                        <a target="_blank" href="assets/Saad_full_stack.pdf" class="btn px-2 py-1 curve"
-                            >Download Resume</a
-                        >
-                        <button class="btn contact px-2 py-1 curve" onclick="scrollToContact()">HIRE ME</button>
-                    </div>
-                </div>
-                <div class="my-img">
-                    <img src="images/nobg.jpg" alt="Saad" />
+            <div
+                class="container_home flex direction-col item-center content-center"
+            >
+                <h2 class="large-font my-1 letter-spacing">I'm</h2>
+                <h1 class="exlarge-font my-1 letter-spacing">A FULL STACK</h1>
+                <h2 class="large-font">Developer</h2>
+                <div class="flex gap-1 mt-2">
+                    <a
+                        target="_blank"
+                        href="assets/Saad_full_stack.pdf"
+                        class="btn px-2 py-1 curve"
+                        >Download Resume</a
+                    >
+                    <button
+                        class="btn contact px-2 py-1 curve"
+                        onclick="scrollToContact()"
+                    >
+                        HIRE ME
+                    </button>
                 </div>
             </div>
 
-            <div id="about" class="container_about width-75p my-5  p-3">
+            <div id="about" class="container_about my-5 p-3">
                 <p class="sub_title">ABOUT ME</p>
                 <h2 class="title med-font mb-5">WHO AM I ?</h2>
                 <p>
@@ -118,7 +139,7 @@
                     <br />
                     in QUEST nawabshah in 2nd Year.
                 </p>
-                <div class="grid row_about gap-2">
+                <div class="grid row_about gap-4">
                     <div class="box front text-red-500">
                         <span>Frontend</span>
                     </div>
@@ -169,42 +190,42 @@
                     </div>
                     <div class="box">
                         <h2 class="mb-1">Business Website</h2>
-                        <p> a business website establishes your brand's</p>
-                        <p> online presence. that will target</p>
+                        <p>a business website establishes your brand's</p>
+                        <p>online presence. that will target</p>
                         <p>more consumers</p>
                     </div>
                     <div class="box">
                         <h2 class="mb-1">School Websites</h2>
                         <p>School websites are made to update students</p>
-                        <p>about timings and  publish certain  </p>
+                        <p>about timings and publish certain</p>
                         <p>information on-line</p>
                     </div>
                     <div class="box">
                         <h2 class="mb-1">Blog Websites</h2>
-                        <p>Blogs are a space for people to share </p>
+                        <p>Blogs are a space for people to share</p>
                         <p>written and visual content about</p>
-                        <p> whatever they desire.</p>
+                        <p>whatever they desire.</p>
                     </div>
                 </div>
             </div>
             <!-- *****==> SERVICES  SECTION ENDSHERE <==*****-->
 
             <!-- *****==> IMG  SECTION STARTS HERE <==*****-->
-            <div class="img flex gap-4 item-center space-evenly">
+            <div class="img flex item-center space-evenly">
                 <div class="center">
-                    <span class="weight-600 large-font"> 430 </span>
+                    <span class="weight-600 heading projects_no"> 430</span>+
                     <p class="letter-spacing">CUPS OF COFFEE</p>
                 </div>
                 <div class="center">
-                    <span class="weight-600 large-font"> 45 </span>
+                    <span class="weight-600 heading"> 45+</span>
                     <p class="letter-spacing">PROJECTS</p>
                 </div>
                 <div class="center">
-                    <span class="weight-600 large-font"> 16 </span>
+                    <span class="weight-600 heading"> 16+</span>
                     <p class="letter-spacing">CLIENTS</p>
                 </div>
                 <div class="center">
-                    <span class="weight-600 large-font"> 6 </span>
+                    <span class="weight-600 heading"> 6+</span>
                     <p class="letter-spacing">PARTNERS</p>
                 </div>
             </div>
@@ -215,7 +236,9 @@
                 <p class="sub_title">MY SKILLS</p>
                 <h2 class="title med-font mb-5">TECHNICAL LEVEL</h2>
                 <p>I have experience in the following technologies.</p>
-                <h2 class="mt-3 exsmall-font weight-500">Frontend Technologies</h2>
+                <h2 class="mt-3 exsmall-font weight-500">
+                    Frontend Technologies
+                </h2>
                 <div class="grid gtc-2 gap-3 mt-2">
                     <div>
                         <h3 class="tech">Html</h3>
@@ -266,7 +289,9 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="mt-5 exsmall-font weight-500">Backend Technologies</h2>
+                <h2 class="mt-5 exsmall-font weight-500">
+                    Backend Technologies
+                </h2>
                 <div class="grid gtc-2 gap-3 mt-2">
                     <div>
                         <h3 class="tech">Php</h3>
@@ -348,7 +373,7 @@
             <!-- *****==> SKILLS  SECTION ENDS HERE<==*****-->
 
             <!-- *****==> PROJECTS  SECTION STARTS HERE<==*****-->
-            <div id="projects" class="container_projects width-75p my-6 p-3">
+            <div id="projects" class="container_projects my-6 p-3">
                 <p class="sub_title">MY WORK</p>
                 <h2 class="title med-font mb-5">RECENT PROJECTS</h2>
                 <ul class="flex gap-2">
@@ -399,6 +424,38 @@
             <!-- *****==> PROJECTS  SECTION ENDS HERE<==*****-->
 
             <!-- *****==> CONTACT  SECTION STARTS HERE<==*****-->
+            <div id="testimonials" class="container_testimonials my-5 py-2">
+                <p class="sub_title">WHAT MY CLIENTS SAY?</p>
+                <h2 class="title med-font mb-5">TESTIMONIALS</h2>
+                <div class="test_grid">
+                    <a
+                        href="https://www.fiverr.com/mrsajid4522?up_rollout=true"
+                        class="flex box gap-1 item-center text-left"
+                        target="_blank"
+                    >
+                        <img
+                            class="rounded-full mx-auto"
+                            src="images/stefan.jpg"
+                            alt=""
+                            width="70px"
+                            height="70px"
+                        />
+                        <div class="">
+                            <div class="flex space-between item-center">
+                                <span class="text-white">Stefanescuf</span>
+                                <div class="rating main-color small-font">
+                                    &starf; &starf; &starf; &starf; &starf;
+                                </div>
+                            </div>
+                            <p>
+                                Very happy with the work provided! Fast delivery
+                                , he completed everything i asked. Very
+                                professional.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
             <div id="contact" class="container_contact my-5">
                 <p class="sub_title">KEEP IN TOUCH</p>
                 <h2 class="title med-font mb-5">CONTACT ME</h2>
@@ -495,4 +552,5 @@
         </main>
     </body>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 </html>
