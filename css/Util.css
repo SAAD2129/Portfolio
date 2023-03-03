@@ -890,7 +890,7 @@ button {
 }
 
 .m-1auto {
-	margin: 1rem auto 0 !important;
+	margin: 1rem auto !important;
 }
 
 .m-2auto {
@@ -1105,4 +1105,11 @@ hr {
 	height: 1.5px;
 	outline: none;
 	border: none;
+}
+@media screen and (max-width: 700px) {
+	.px-4{
+        padding-left: 2rem!important;
+        padding-right: 2rem!important;
+    }
+	
 }

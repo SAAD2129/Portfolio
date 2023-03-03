@@ -2,7 +2,7 @@ let Projects = [
     {
         name: "Cloud Notes",
         category: "mern",
-        url: "./assets/Notes.mp4",
+        url: "https://cloud-notes-bysaad.herokuapp.com/",
         // img: "https://source.unsplash.com/random/470x342?notes,todo",
         img: "./images/notes.jpeg",
         gitHub: "https://github.com/SAAD2129/Cloud-Notes",

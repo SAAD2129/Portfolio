@@ -8,10 +8,10 @@ nav ul li a {
     letter-spacing: 0.125rem;
     cursor: pointer;
 }
-.container_home h1{
+.container_home h1 {
     font-size: 6rem;
 }
-.container_home h2{
+.container_home h2 {
     font-size: 4.5rem;
 }
 * {
@@ -72,9 +72,12 @@ nav ul li {
 }
 .row {
     grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    gap: 2rem;
 }
 .row_about {
-    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+        gap: 2rem;
+
 }
 main {
     padding-left: 20%;
@@ -180,6 +183,9 @@ p {
 }
 .design {
     border-bottom: 4px solid rgb(47, 47, 174);
+}
+.deploy {
+    border-bottom: 4px solid rgb(226, 157, 27);
 }
 .box-happy {
     background-color: #19243a;
@@ -334,30 +340,7 @@ p {
 .container_projects {
     overflow: hidden;
 }
-@media screen and (max-width: 700px) {
-    .contact_form {
-        gap: 7rem;
-        flex-direction: column-reverse;
-    }
-    .contact_form form {
-        width: 100%;
-    }
-    .container_skills .grid {
-        display: block;
-    }
-    .container_skills h3 {
-        margin-top: 1rem;
-    }
-    .heading {
-        font-size: 2rem !important;
-    }
-    .space-evenly {
-        /* flex-direction: column; */
-        justify-content: center;
-        gap: 1rem !important;
-        align-items: center;
-    }
-}
+
 @media screen and (max-width: 1250px) {
     html {
         font-size: 65%;
@@ -404,4 +387,57 @@ body {
 .social_handles .uil:hover {
     color: var(--main-color);
     transition: all 0.4s ease-in;
+}
+
+@media screen and (max-width: 700px) {
+    .contact_form {
+        gap: 7rem;
+        flex-direction: column-reverse;
+    }
+    .contact_form form {
+        width: 100%;
+    }
+    .container_skills .grid {
+        display: block;
+    }
+    .container_skills h3 {
+        margin-top: 1rem;
+    }
+    .heading {
+        font-size: 2rem !important;
+    }
+    .space-evenly {
+        justify-content: center;
+        gap: 1rem !important;
+        align-items: center;
+    }
+    .form-control {
+        width: 100% !important;
+    }
+    .container_projects > ul {
+        flex-direction: column !important;
+    }
+    .img {
+        flex-direction: column !important;
+    }
+    .client_review ,.client_review .flex{
+        flex-direction: column;
+    }
+    .container_home .large-font{
+        font-size: 2rem;
+    }
+    .container_home .exlarge-font{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .px-4{
+        padding-left: 2rem!important;
+        padding-right: 2rem!important;
+    }
+    .row{
+		grid-template-columns: repeat(1,1fr);
+	}
+    .card-body a img{
+        width: 100%;
+    } 
 }
